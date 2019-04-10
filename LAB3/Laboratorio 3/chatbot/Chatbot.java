@@ -5,8 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * Esta clase es la que almacena las palabras que el chatbot es capaz de entender, como tambiÈn las respuestas que el chatbot
- * da en funciÛn a la entrada que le brinda el usuario. Adem·s almacena la personalidad del chatbot que se le da con seed.
+ * Esta clase es la que almacena las palabras que el chatbot es capaz de entender, como tambi√©n las respuestas que el chatbot
+ * da en funci√≥n a la entrada que le brinda el usuario. Adem√°s almacena la personalidad del chatbot que se le da con seed.
  * 
  * @version 1.0
  * @since 1.0
@@ -23,12 +23,12 @@ public class Chatbot {
 	
 	private String[] informacion = {"informacion", "info", "Informacion", "informacion", "informacion?"};
 	private String[] Rinformacion = {"Tenemos las siguientes promociones: \\n 3 preservativos x $1.000 \\n 12 preservativos x $3.600 \\n 18 preservativos x $5.400 \\n 36 preservativos x $10.000 \\n Entregamos en estaciones de metro y en Universidad de Santiago",
-									 "Estimado, le invito a revisar el fanpage, ya que est· toda la informaciÛn publicada ahÌ.",
+									 "Estimado, le invito a revisar el fanpage, ya que est√° toda la informaci√≥n publicada ah√≠.",
 									 "Te invito a revisar nuestra maravillosa fanpage de Facebook, que contienen todas nuestras alegres publicaciones, y la maravillosa informacion que requieres"};
 	private String[] lugar = {"donde", "donde?", "Donde", "lugar"};
-	private String[] Rlugar = {"Entregamos en los siguientes metros: \\n L1: Desde Baquedano a Manquehue. \\n L6: Desde los Leones a —uÒoa. \\n L4: Desde Plaza egaÒa a Tobalaba \\n Y tambiÈn entregamos en USACH y en Plaza —uÒoa sin minimo de compras.",
+	private String[] Rlugar = {"Entregamos en los siguientes metros: \\n L1: Desde Baquedano a Manquehue. \\n L6: Desde los Leones a √ëu√±oa. \\n L4: Desde Plaza ega√±a a Tobalaba \\n Y tambi√©n entregamos en USACH y en Plaza √ëu√±oa sin minimo de compras.",
 							   "Depende del dia y la hora.",
-							   "Podemos coordinar para que el lugar de entrega sea lo m·s optimo para usted."};
+							   "Podemos coordinar para que el lugar de entrega sea lo m√°s optimo para usted."};
 
 	private String[] solicitarCompra = {"comprar", "comprar?", "comprar,", "pedido", "pedido?", "pedido,"};
 	private String[] RsolicitarCompra = {"Perfecto, cuantos necesitas?",
@@ -49,29 +49,29 @@ public class Chatbot {
 	
 
 	private String[] diahora = {"lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"};
-	private String[] Rdiahora = {"Buenisima, ese dia entregamos en Los Leones, —uÒoa, Tobalaba y Plaza EgaÒa.. cual te acomoda m·s?",
-								 "Ya ese dÌa entregamos en Los Leones, —uÒoa, Tobalaba y Plaza EgaÒa.. donde?",
-								 "Que hermoso dÌa para salir de compras! Ese dia entregamos en los siguientes metros: Los Leones, —uÒoa, Tobalaba y Plaza EgaÒa"};
+	private String[] Rdiahora = {"Buenisima, ese dia entregamos en Los Leones, √ëu√±oa, Tobalaba y Plaza Ega√±a.. cual te acomoda m√°s?",
+								 "Ya ese d√≠a entregamos en Los Leones, √ëu√±oa, Tobalaba y Plaza Ega√±a.. donde?",
+								 "Que hermoso d√≠a para salir de compras! Ese dia entregamos en los siguientes metros: Los Leones, √ëu√±oa, Tobalaba y Plaza Ega√±a"};
 
-	private String[] lugares = {"leones", "ÒuÒoa", "tobalaba", "egaÒa"};
-	private String[] Rlugares = {"Ya bac·n, te los dejo reservados entonces.. nos vemos!",
+	private String[] lugares = {"leones", "√±u√±oa", "tobalaba", "ega√±a"};
+	private String[] Rlugares = {"Ya bac√°n, te los dejo reservados entonces.. nos vemos!",
 			                     "Ya, nos vemos. Chao.",
 			                     "No te vas a arrepentir, te los deje apartados.. gracias por comprar!"};
 
 	private String[] hold = {"espero"};
-	private String[] Rhold = {"Consulte, y si nos queda stock!, para cuando te gustarÌa agendar?",
+	private String[] Rhold = {"Consulte, y si nos queda stock!, para cuando te gustar√≠a agendar?",
 			                  "Ya, nos queda. Cuando quieres hacer la transaccion?",
-			                  "Revise en nuestro maravillosa bodega, y si nos queda.. cuando te gustarÌa hacer la compra? (:"};
+			                  "Revise en nuestro maravillosa bodega, y si nos queda.. cuando te gustar√≠a hacer la compra? (:"};
 
 	private String[] negacion = {"no","No","No,","no,"};
 	private String[] Rnegacion = {"Bueno, cualquier cosa no dude en contactarnos nuevamente, que le vaya bien!",
 			                      "Ok, adios.",
-			                      "Que tengas un maravilloso dÌa! Que dios este contigo."};
+			                      "Que tengas un maravilloso d√≠a! Que dios este contigo."};
 
 	/**
 	 * 
 	 * @param semilla es un entero que entrega el Usuario, y que ayuda a definir la personalidad del chatbot
-	 * Este mÈtodo almacena en el atributo "intPersonalidad" un 1 o un 2, en funcion al resultado que de el Random.
+	 * Este m√©todo almacena en el atributo "intPersonalidad" un 1 o un 2, en funcion al resultado que de el Random.
 	 */
 	
 	public void intPerson(int semilla) { 
@@ -83,7 +83,7 @@ public class Chatbot {
 	
 	/**
 	 * 
-	 * @return este mÈtodo retorna intPersonalidad con tipo de dato int
+	 * @return este m√©todo retorna intPersonalidad con tipo de dato int
 	 */
 	
 	public int get_intPerson() {
@@ -101,7 +101,7 @@ public class Chatbot {
 	
 	/**
 	 * 
-	 * @return este mÈtodo retorna personalidad como un tipo de dato String
+	 * @return este m√©todo retorna personalidad como un tipo de dato String
 	 */
 	
 	public String get_perso() {
@@ -109,16 +109,16 @@ public class Chatbot {
 	}
 	
 	/**
-	 * @return este mÈtodo define el horario de comienzo del flujo conversacional del chatbot y muestra el mensaje inicial.
+	 * @return este m√©todo define el horario de comienzo del flujo conversacional del chatbot y muestra el mensaje inicial.
 	 */
 	
 	public void beginDialog() {
 		date = new Date();
-		answer = hourdateFormat.format(date) + "Chatbot> Hola! como te puedo ayudar el dÌa de hoy?";		
+		answer = hourdateFormat.format(date) + "Chatbot> Hola! como te puedo ayudar el d√≠a de hoy?";		
 	}
 	
 	/**
-	 * @return este mÈtodo da el mensaje de despedida del chatbot, adem·s de mostrar la hora de termino de la conversacion.
+	 * @return este m√©todo da el mensaje de despedida del chatbot, adem√°s de mostrar la hora de termino de la conversacion.
 	 */
 	
 	public void endDialog() {
@@ -128,10 +128,10 @@ public class Chatbot {
 	
 	/**
 	 * 
-	 * Este mÈtodo es el que se encarga de analizar las palabras de una oraciÛn ingresada por el usuario, y ver si alguna de ellas
+	 * Este m√©todo es el que se encarga de analizar las palabras de una oraci√≥n ingresada por el usuario, y ver si alguna de ellas
 	 * coinciden con las palabras que el chatbot esta configurado para entender.
 	 * 
-	 * @param oracion es un arreglo de String que contiene las palabras de la oraciÛn que entrego el usuario para conversar con el
+	 * @param oracion es un arreglo de String que contiene las palabras de la oraci√≥n que entrego el usuario para conversar con el
 	 * chatbot.
 	 * 
 	 */
@@ -237,14 +237,11 @@ public class Chatbot {
 			
 		
 		
-		//return "no entendi niuna wea perkinazo y la ctm, tu mama es maraca y era";
-		
-		
 	}
 	
 	/**
 	 * 
-	 * @return este mÈtodo retorna la respuesta que dar· el chatbot en funcion a lo qeu se le ingreso.
+	 * @return este m√©todo retorna la respuesta que dar√° el chatbot en funcion a lo qeu se le ingreso.
 	 */
 	
 	public String dime_respuesta() { //GETTER
